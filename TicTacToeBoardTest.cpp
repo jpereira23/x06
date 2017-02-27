@@ -18,9 +18,8 @@ class TicTacToeBoardTest : public ::testing::Test
 
 TEST(TicTacToeBoardTest, sanityCheck)
 {
-	TicTacToeBoard tttb; 
-	Piece p = tttb.getPiece(2, 3); 
-	ASSERT_TRUE(X == p || 0 == p || Invalid == p ||Blank == p);
+	TicTacToeBoard t; 
+	t.clearBoard(); 
+	ASSERT_FALSE(t.checkIfBoardIsClear());	
 }
-
 

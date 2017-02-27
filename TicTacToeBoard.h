@@ -27,7 +27,7 @@ class TicTacToeBoard
   public:
   	//Constructor sets an empty board and specifies it is X's turn first
   	TicTacToeBoard();
-
+	  bool checkIfBoardIsClear();
   	//Resets each board location to the Blank Piece value
   	void clearBoard();
 
